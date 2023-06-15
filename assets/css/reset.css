@@ -1,0 +1,60 @@
+/* Reset the font size of heading elements */
+/* Set the font size of headings to a default value */
+h3,
+h6,
+h1,
+h2,
+h5,
+h4 {
+    font-size: 1em;
+}
+
+/* Ensure the body element takes up at least 100% of the viewport height */
+/* Make sure the body element fills the entire visible area of the webpage */
+body {
+    min-height: 100%;
+}
+
+/* Remove default bullet points from lists */
+/* Get rid of the default bullet points in unordered and ordered lists */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Reset line height and font family for the body element */
+/* Set the line height and font family for the entire webpage */
+body {
+    line-height: 1;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset the box size and remove margins and paddings */
+/* Reset the size of elements and remove any extra spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ßßß
+/* Set the height of the html element to 100% */
+/* Make sure the html element takes up 100% of the available height */
+html {
+    height: 100%;
+}
+
+/* Reset the font size and font family of form elements and code blocks */
+/* Set the font size and font family for form elements and code blocks */
+option,
+select,
+textarea,
+code,
+pre,
+input,
+button,
+optgroup {
+    font-size: 1em;
+    font-family: inherit;
+}

@@ -1,0 +1,378 @@
+/* Colors */
+:root {
+    --dark-gray: #333333;
+    --light-gray: #CCCCCC;
+    --blue: #007BFF;
+    --black: #000000;  
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #bcb8b1;
+}
+
+/* header*/
+header {
+    display: flex;
+    width: 100%;
+    background-color: var(--dark-gray);
+    align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+    justify-content: space-between;
+    margin-bottom: 1%;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 225%;
+    margin: 2%;
+}
+
+/* main */
+nav {
+    margin: 1%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 115%;
+    padding: 10px;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline var(--black) 3px;
+    font-weight: bold;
+}
+
+/* Main styling */
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    max-width: 96%;
+}
+
+/* AboutMe */
+.about-me {
+    display: flex;
+    margin: 0% 2%;
+    padding: 2% 0;
+    align-items: center;
+    border-bottom: 3px solid var(--black);
+}
+
+.about-me-title {
+    display: flex;
+    width: 200px;
+    padding: 5%;
+    border-right: 2px solid var(--light-gray);
+    align-self: flex-start;
+}
+
+.about-me-title h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.about-me-content {
+    display: flex;
+    padding-left: 2%;
+    align-items: flex-start;
+}
+
+.about-me-content img {
+    border-radius: 10%;
+    width: 170px;
+    height: 215px;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px var(--light-gray);
+}
+
+.about-me-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 3%;
+    max-width: 900px;
+}
+
+
+/* Project list*/
+.projects {
+    display: flex;
+    margin: 2% 2%;
+    padding-bottom: 4%; 
+    border-bottom: 3px solid var(--black);
+}
+
+/* titles */
+.projects-title {
+    display: flex;
+    width: 200px;
+    padding: 5%;
+    border-right: 2px solid var(--light-gray);
+    align-self: flex-start;
+}
+
+.projects-title h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+/* Feature P styling */
+.feature {
+    display: flex;
+}
+
+.feature-project {
+    flex: 100%;
+    margin: 2% 2% 0 2%;
+    position: relative;
+    z-index: 1;
+  }
+  
+.feature-project img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    opacity: 1;
+    transition: .5s ease;
+}
+
+
+.projects-section {
+    display: flex;
+}
+
+.first-project,
+.second-project,
+.third-project,
+.fourth-project {
+    flex: 65%;
+    margin: 2%;
+    width: 20%;
+    height: 20%;
+    position: relative;
+}
+
+.projects-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: 1s ease;
+}
+
+/* project data */
+.project-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2% 0;
+    background-color: var(--blue);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .feature-project,
+  .first-project,
+  .second-project,
+  .third-project,
+  .fourth-project {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .feature-project img,
+  .first-project img,
+  .second-project img,
+  .third-project img,
+  .fourth-project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 1;
+    transition: 0.5s ease;
+  }
+  
+  .feature-project:hover .project-label,
+  .first-project:hover .project-label,
+  .second-project:hover .project-label,
+  .third-project:hover .project-label,
+  .fourth-project:hover .project-label {
+    opacity: 1;
+  }
+
+  .second-project {
+    flex: 65%;
+    margin: 2%;
+    width: 20%;
+    height: 20%;
+    position: relative;
+  }
+  
+  .second-project .project-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2% 0;
+    background-color: var(--blue);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+
+  
+  
+  
+/* Contact section */
+.contact {
+    display: flex;
+    margin: 2% 2%;
+    padding: 2% 0;
+    align-items: center;
+}
+
+.contact-title {
+    display: flex;
+    width: 200px;
+    padding: 5%;
+    border-right: 2px solid var(--light-gray);
+    align-self: flex-start;
+    width: fit-content;
+}
+
+.contact-title h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.contact-content {
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-content ul {
+    display: flex;
+    list-style-type: none;
+    gap: 75%;
+}
+
+.contact-content a {
+    color: black;
+    font-size: 120%;
+}
+
+/* Footer section */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: var(--blue);
+    border-top: 2px solid var(--light-gray);
+    color: black;
+}
+
+/* Media  */
+@media screen and (max-width: 700px) {
+    
+    header {
+        flex-direction: column;
+        height: 15vh;
+    }
+
+    header h1 {
+        font-size: 5vmax;
+    }
+
+    nav a {
+        font-size: 2vmax;
+    }
+
+    
+    .about-me {
+        flex-direction: column;
+    }
+
+    .projects,
+    .contact {
+        flex-direction: column;
+    }
+
+    .about-me-content {
+        flex-direction: column;
+    }
+
+    .about-me-content img {
+        width: 45%;
+        height: 45%;
+        margin: 2%;
+        align-self: flex-start;
+    }
+
+    .about-me-title,
+    .projects-title,
+    .contact-title {
+        border-right: none;
+        text-decoration: underline;
+        padding-bottom: 1%;
+        align-self: flex-start;
+
+    }
+
+
+
+        .projects {
+            padding-bottom: 25%;
+        }
+
+    /* Links */
+    .contact-content ul {
+        flex-direction: column;
+        line-height: 2;
+    }
+
+}
